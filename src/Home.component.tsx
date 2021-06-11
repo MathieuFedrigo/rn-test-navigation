@@ -1,5 +1,5 @@
-import {Text, View} from "react-native";
-import React, {FC} from "react";
+import { Text, View } from 'react-native';
+import React, { FC } from 'react';
 
 export const HomeScreen: FC = () => {
   return (
@@ -7,4 +7,4 @@ export const HomeScreen: FC = () => {
       <Text>Home Screen</Text>
     </View>
   );
-}
+};

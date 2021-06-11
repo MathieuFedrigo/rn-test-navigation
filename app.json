@@ -5,8 +5,6 @@
     "name": "how-to-test-navigation",
     "slug": "how-to-test-navigation",
     "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ]
+    "assetBundlePatterns": ["**/*"]
   }
 }

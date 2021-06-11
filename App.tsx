@@ -1,7 +1,7 @@
-import React, {FC} from 'react';
+import React, { FC } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import {HomeScreen} from "./src/Home.component";
+import { HomeScreen } from './src/Home.component';
 
 const Stack = createStackNavigator();
 
@@ -13,6 +13,6 @@ const App: FC = () => {
       </Stack.Navigator>
     </NavigationContainer>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,12 @@
+{
+  "name": "how-to-test-navigation",
+  "displayName": "how-to-test-navigation",
+  "expo": {
+    "name": "how-to-test-navigation",
+    "slug": "how-to-test-navigation",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}

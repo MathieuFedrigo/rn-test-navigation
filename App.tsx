@@ -5,6 +5,7 @@ import { HomePage } from './src/Home.component';
 import { ProfilePage } from './src/Profile.component';
 import { HelpButton } from './src/HelpButton.component';
 import { HelpPage } from './src/Help.component';
+import { CountPage } from './src/Count.component';
 
 const Stack = createStackNavigator();
 
@@ -19,6 +20,7 @@ const App: FC = () => {
           component={HelpPage}
           options={{ headerRight: HelpButton }}
         />
+        <Stack.Screen name="COUNT" component={CountPage} />
       </Stack.Navigator>
     </NavigationContainer>
   );

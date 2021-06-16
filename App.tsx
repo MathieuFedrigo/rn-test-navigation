@@ -6,8 +6,9 @@ import { ProfilePage } from './src/Profile.component';
 import { HelpButton } from './src/HelpButton.component';
 import { HelpPage } from './src/Help.component';
 import { CountPage } from './src/Count.component';
+import { StackNavigatorParams } from './src/types';
 
-const Stack = createStackNavigator();
+const Stack = createStackNavigator<StackNavigatorParams>();
 
 const App: FC = () => {
   return (

@@ -1,9 +1,10 @@
 import { Button, Text, View } from 'react-native';
 import React, { FC } from 'react';
 import { useNavigation } from '@react-navigation/native';
+import { Navigation } from './types';
 
 export const HomePage: FC = () => {
-  const { navigate } = useNavigation();
+  const { navigate } = useNavigation<Navigation<'HOME'>>();
   const goToProfile = () => navigate('PROFILE');
   const goToCount = () => navigate('COUNT');
 

@@ -1,9 +1,10 @@
 import { Button, Text, View } from 'react-native';
 import React, { FC, useState } from 'react';
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
+import { Navigation } from './types';
 
 export const CountPage: FC = () => {
-  const { navigate } = useNavigation();
+  const { navigate } = useNavigation<Navigation<'COUNT'>>();
   const onPress = () => navigate('PROFILE');
 
   const [pageViewsCount, setPageViewsCount] = useState(0);

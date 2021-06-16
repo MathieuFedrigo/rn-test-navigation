@@ -1,9 +1,10 @@
 import { Button, Text, View } from 'react-native';
 import React, { FC } from 'react';
 import { useNavigation } from '@react-navigation/native';
+import { Navigation } from './types';
 
 export const ProfilePage: FC = () => {
-  const { goBack } = useNavigation();
+  const { goBack } = useNavigation<Navigation<'PROFILE'>>();
 
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>

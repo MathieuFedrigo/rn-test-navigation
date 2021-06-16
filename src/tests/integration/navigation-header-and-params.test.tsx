@@ -4,9 +4,10 @@ import { NavigationContainer } from '@react-navigation/native';
 import { HelpButton } from '../../HelpButton.component';
 import { fireEvent, render } from '@testing-library/react-native';
 import { HelpPage } from '../../Help.component';
+import { StackNavigatorParams } from '../../types';
 
 it('displays help text when you click on help button in header', async () => {
-  const { Navigator, Screen } = createStackNavigator();
+  const { Navigator, Screen } = createStackNavigator<StackNavigatorParams>();
   const PageAndHeader: FunctionComponent = () => (
     <NavigationContainer>
       <Navigator initialRouteName="HELP">

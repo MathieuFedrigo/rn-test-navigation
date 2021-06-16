@@ -4,9 +4,10 @@ import { NavigationContainer } from '@react-navigation/native';
 import { fireEvent, render } from '@testing-library/react-native';
 import { CountPage } from '../../Count.component';
 import { ProfilePage } from '../../Profile.component';
+import { StackNavigatorParams } from '../../types';
 
 it('adds 1 to the views counter each time you go to the Count page (even after a goBack)', async () => {
-  const { Navigator, Screen } = createStackNavigator();
+  const { Navigator, Screen } = createStackNavigator<StackNavigatorParams>();
   const Page: FunctionComponent = () => (
     <NavigationContainer>
       <Navigator initialRouteName="COUNT">

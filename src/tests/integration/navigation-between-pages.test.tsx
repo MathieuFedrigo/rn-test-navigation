@@ -4,9 +4,10 @@ import React from 'react';
 import { HomePage } from '../../Home.component';
 import { ProfilePage } from '../../Profile.component';
 import { fireEvent, render } from '@testing-library/react-native';
+import { StackNavigatorParams } from '../../types';
 
 it('navigates to profile page on button press', async () => {
-  const { Navigator, Screen } = createStackNavigator();
+  const { Navigator, Screen } = createStackNavigator<StackNavigatorParams>();
   const HomeAndProfile = () => (
     <NavigationContainer>
       <Navigator initialRouteName="HOME">

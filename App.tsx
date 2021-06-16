@@ -1,11 +1,7 @@
 import React, { FC } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { HomePage } from './src/Home.component';
-import { ProfilePage } from './src/Profile.component';
-import { HelpButton } from './src/HelpButton.component';
-import { HelpPage } from './src/Help.component';
-import { CountPage } from './src/Count.component';
+import { HomePage, ProfilePage, HelpButton, HelpPage, CountPage } from './src';
 import { StackNavigatorParams } from './src/types';
 
 const Stack = createStackNavigator<StackNavigatorParams>();

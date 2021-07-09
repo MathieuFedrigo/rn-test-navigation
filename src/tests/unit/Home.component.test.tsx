@@ -15,6 +15,14 @@ it('navigates to profile page on button press', async () => {
   expect(mockNavigate).toHaveBeenCalledWith('PROFILE');
 });
 
+it('navigates to Help page on button press', async () => {
+  const { getByText } = render(<HomePage />);
+
+  fireEvent.press(getByText('Go to help page'));
+
+  expect(mockNavigate).toHaveBeenCalledWith('HELP');
+});
+
 it('navigates to Count page on button press', async () => {
   const { getByText } = render(<HomePage />);
 
